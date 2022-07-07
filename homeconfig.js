@@ -2,8 +2,6 @@ export const gd3 = {
 
     // Geostreaming API Information - this is also displayed in the Welcome Page dropdown selector
     geostreaming_endpoints: [
-        {url: "https://gltg-dev.ncsa.illinois.edu/geostreams", label: "GLTG DEV", title: "Great Lakes to Gulf",
-            subtitle: "VIRTUAL OBSERVATORY"},
         {url: "https://greatlakestogulf.org/geostreams", label: "GLTG PROD", title: "Great Lakes to Gulf",
             subtitle: "VIRTUAL OBSERVATORY"},
     ],

@@ -11,7 +11,9 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: "[name].bundle.js"
+        filename: "[name].bundle.js",
+        publicPath: '/',
+        crossOriginLoading: 'anonymous'
     },
     module: {
         rules: [

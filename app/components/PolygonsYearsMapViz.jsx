@@ -857,6 +857,7 @@ class PolygonsYearsMapViz extends Component {
                                         tooltipContent={(d) => `${d.value} lb/acre`}
                                         width={450}
                                         height={235}
+                                        fill={'#444444'}
                                     />
                                 </CardText>
 
