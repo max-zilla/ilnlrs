@@ -1,22 +1,34 @@
-# Geodashboard V3
+# GLTG: Geodashboard
 
-Part of the [Geostreaming Data Framework](https://geodashboard.ncsa.illinois.edu/). Web frontend to explore, search and
-visualize data stored in the Geostreaming Web Service.
 
-Built on react.js, redux, webpack, babel, react-router, openlayers 3.
+Great Lakes to Gulf frontend based on Geostreams and Geodashboard
 
-## How to Build
+## Setup
+- Initialize git submodule (Data Stories)
+    ```bash
+    git submodule init
+    git submodule update
+    ```
+- Install dependencies
+    ```bash
+    yarn
+    ```
+- Start project
+    ```bash
+    yarn start
+    ```
+- Start BMP Project
+    ```bash
+    yarn bmp:start
+    ```
 
-Requirements: [Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com).
+### Environment variables
 
-Install dependencies: `yarn install` (or `npm install`)
+| Variable | Type | Default Dev | Default Prod | Description |
+|----------|------|-------------|--------------|-------------|
+| GEOSERVER_URL | string | https://gltg-dev.ncsa.illinois.edu/geoserver | /geoserver | |
+| GEOSTREAMS_URL | string | https://gltg-dev.ncsa.illinois.edu/geostreams | /geostreams | |
+| GA_TOKEN | string | | | Google Analytics Token |
+| BMP_API_URL | string | https://gltg-dev.ncsa.illinois.edu/bmp-api/v1.0 | /bmp | |
 
-Develop: `yarn start` (or `npm start`)
 
-Build: `yarn run build` (or `npm run build`)
-
-Test for flow: `yarn run flow` (or `npm run-script flow`)
-
-Once built you can create a docker image by running (change tag name as appropriate): 
-
-```docker build -t geostreams/geodashboard:3.0.0 .```

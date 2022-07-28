@@ -4,15 +4,101 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## UNRELEASED
+
+### Changed
+- Use the new explore view
+  [Github-38](https://github.com/geostreams/geodashboard/issues/38)
+- Move BMP to GLTG
+  [Github-2](https://github.com/geostreams/gltg/issues/2)
+- Update BMP results description
+  [Github-5](https://github.com/geostreams/gltg/issues/5)
+- Update the build section in Dockerfile
+  [GLTG-7](https://github.com/geostreams/gltg/issues/7)
+- Improved BMP UI/UX
+  [GLTG-9](https://github.com/geostreams/gltg/issues/9)
+
+## [3.6.0] - 2020-12-14
+
+### Added
+- Added district layers
+  [GLGVO-710] (https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-710)
+
+### Changed
+- Updated charts' axis titles' padding
+  [GLGVO-711](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-711)
+
+## [3.5.0] - 2020-10-01
+
+### Changed
+- Improved the components and config relations between `@geostreams/gltg` and `@geostreams/geostreaming`
+  [GEOD-1341](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1341)
+- Get version number in footer from package.json
+  [GLGVO-666](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-666)
+
 ## [3.3.0] - 2020-06-18
+
+### Added
+- Added citation for HUC-8 dashboard
+  [GLGVO-630] (https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-630)
+- Added better explanation of the Avg. Annual Nutrient yield graph
+  [GLGVO-640](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-640)
+- Added overall nitrate load text for IL drainage
+  [GLGVO-641](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-641)
+- Added legend to nitrate flow chart
+  [GLGVO-643](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-643)
+- Added contextual layers for areas outside of IL drainage and unmonitored areas
+  [GLGVO-647](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-647)
+- Added layer legend to the map
+  [GLGVO-648](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-648)
+- Added executive summary to HUC8 section in FAQs
+  [GLGVO-651](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-651)
+- Added state annual nutrient load chart
+  [GLGVO-662](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-662)
+- Added Google Analytics config
+  [GLGVO-664](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-664)
 
 ### Changed
 - Create Intervals as a Reusable Component
   [GEOD-1248](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1248)
+- Updated the Footer to take up less space
+  [GLGVO-604](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-604)
+- Updated map legend and fill pattern for no data cases
+  [GLGVO-623](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-623)
+- Replaced geojson layers with geobuf on the landing page map
+  [GEOD-1334](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1334)
+- Updated styling of data stories
+  [GLGVO-633](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-633)
+- Replaced the map popup with a permanent info box
+  [GLGVO-634](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-634)
+- Updated partners and faq pages
+  [GLGVO-635](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-635)
+- Added data nitrate load to Gulf of Mexico
+  [GLGVO-638](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-638)
+- Fixed station MI_0035 name
+  [GLGVO-642](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-642)
+- Show unmonitored and outside areas only for IL drainage and huc8
+  [GLGVO-650](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-650)
+- Added fixed extents for each boundary
+  [GLGVO-646](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-646)
+- Updated Unmonitored Areas layer (now called Extrapolated Areas)
+  [GLGVO-652](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-652)
+- Make rivers show above boundary layers 
+  [GLGVO-658](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-658)
 
 ### Fixed
 - Click the 'x' in the top right corner of the Detail Page, the page returns to the Explore Page
   [GEOD-1274](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1274)
+- Browsable map bound to the Mississippi River and limit zoom out
+  [GEOD-1320](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1320)
+- Fixed layer interaction bug on the Home map
+  [GLGVO-644](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-644)
+- Hide annual nutrient chart title when there is not chart
+  [GLGVO-653](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-653)
+- Updated the styling of the home page and added data for state annual nutrient load
+  [GLGVO-657](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-657)
+- Fixed an issue with legend not showing when nutrient level is zero
+  [GLGVO-663](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-663)
 
 ## [3.1.0] - 2019-09-19
 
@@ -65,6 +151,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   [GLGVO-562](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-562)
 - Change Background Map to Terrain on Landing Page Dashboard
   [GEOD-1253](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1253)
+
 ### Fixed
 - Ensure Markers Always Appear on the Explore and Search Pages
   [GEOD-1238](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1238)
@@ -369,7 +456,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   [GEOD-1048](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1048)
 - Added Map interface in Mobile version
   [GEOD-1042](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1042)
-- Added usgs parameter phosphorus-insitu-orthophosphate-as-p-mgl
 - Added Optional Explore Layers Legend
   [GLGVO-422](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-422)
 - Visually Group Associated Layers on the Explore Page
@@ -381,8 +467,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Refactored Exploratory Analysis code
   [GLGVO-410](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-410)
   [GLGVO-412](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-412)
-- Use cropped logo in the Menu Bar
-  [GLGVO-414](https://opensource.ncsa.illinois.edu/jira/browse/GLGVO-414)
 - Update react-mdc-web version from '0.12.2' to '0.17.0'
   [GEOD-1073](https://opensource.ncsa.illinois.edu/jira/browse/GEOD-1073)
 
