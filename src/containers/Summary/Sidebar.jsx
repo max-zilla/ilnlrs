@@ -539,52 +539,6 @@ const Sidebar = ({
                 {...iframeProps}
                 handleClose={handleDataStoriesModalClose}
             />
-            <Container className={classes.carousel}>
-                <Divider />
-                <Box display="flex" justifyContent="space-between" alignItems="center">
-                    <Typography variant="h5" gutterBottom>
-                        Learn More About GLTG
-                    </Typography>
-                    <Link to="/data-stories" className="right">
-                        View All Data Stories
-                    </Link>
-                </Box>
-                <Carousel
-                    slidesInterval={3000}
-                    buttonsSize="small"
-                    showPauseControl={false}
-                    buttonClasses={classes.carouselButton}
-                >
-                    {dataStories.map(({ title, thumbnail, slides }) => (
-                        <Grid
-                            key={title}
-                            className={`actionIcon ${classes.carouselSlideContainer}`}
-                            onClick={() => updateIframeProps({
-                                source: slides,
-                                title
-                            })}
-                        >
-                            <Grid
-                                item
-                                xs={12}
-                                component="img"
-                                src={thumbnail}
-                                title={title}
-                                className={classes.carouselSlide}
-                            />
-                            <Grid item xs={12}>
-                                <Typography
-                                    gutterBottom
-                                    variant="subtitle2"
-                                    component="h2"
-                                >
-                                    {title}
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    ))}
-                </Carousel>
-            </Container>
             {dialogContent ?
                 <Dialog open onClose={() => updateDialogContent(null)}>
                     <DialogTitle disableTypography>
