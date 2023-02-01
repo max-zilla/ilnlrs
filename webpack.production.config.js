@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const commonConfig = require('./webpack.config.common');
 
-module.exports = merge.merge(commonConfig, {
+module.exports = merge(commonConfig, {
     mode: 'production',
     externals: {
         './config': 'config'
